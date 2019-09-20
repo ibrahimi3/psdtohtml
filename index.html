@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Romy Test</title>
+    <!-- Adding main stylesheet-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Adding secondary stylesheet (slick) for slide show-->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+    <!-- Adding google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet">
+    <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+    }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="mainheader">
+            <a href="#" class="main">01. HISTORY</a>
+            <a href="#" class="morelinks main">02. TEAM</a>
+
+        </div>
+
+        <div class="top">
+            <img src="images/Logo.png" class="logo">
+            <!--<p class="main-text">LOSANGELES<br>
+                    <span id="main-text2">MOUNTAINS</span></p>-->
+            <img src="images/maintext.png" class="maintext">
+
+        </div>
+        <div id="navbar">
+            <span class="navlogo"><img src="images/Logo.png" class="navimg"  >
+            <img src="images/sticky-text.png" class="navpadded navimg" >
+            </span>
+            <span class="navlinks">
+            <a href="#" class="sticky-links" >01. HISTORY</a>
+            <a href="#" class="sticky-links" >02. TEAM</a>
+            </span>
+        </div>
+        <div class="page-1">
+            <span class="page1-number page-number">01.</span>
+            <span class="page1-topic page-topic">HISTORY</span>
+            <div class="page1-text page-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra, rutrum erat rutrum, consectetur mi. Proin at maximus est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam. Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue.
+                </p>
+            </div>
+            <div class="page1-slider">
+                <div class="slide">
+                    <div><img src="images/slide1.png"> </div>
+                    <div><img src="images/slide2.png"></div>
+                    <div><img src="images/slide1.png"> </div>
+                    <div><img src="images/slide2.png"></div>
+                    <div><img src="images/slide1.png"></div>
+                    <div><img src="images/slide2.png"></div>
+                    <div><img src="images/slide1.png"> </div>
+                    <div><img src="images/slide2.png"></div>
+
+                </div>
+            </div>
+            <div class="page2-header">
+                <span class="page2-number page-number">02.</span>
+                <span class="page2-topic page-topic">CLIMB</span>
+            </div>
+            <div class="page2-text page-text">
+                <p>Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue.
+                </p>
+            </div>
+        </div>
+        <div class="page-2">
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'mountain1')" id="defaultOpen">MOUNTAIN 1</button>
+                <button class="tablinks" onclick="openTab(event, 'mountain2')">MOUNTAIN 2</button>
+
+            </div>
+
+            <div id="mountain1" class="tabcontent">
+                <div id="mountain1bg">
+                    <div class="tab1content">
+                        <p class="tabcontent-header">SCHEDULE</p>
+                        <div class="divTable page-text">
+                            <div class="divTableBody">
+                                <div class="divTableRow">
+                                    <div class="divTableCell">25 Nov 2016</div>
+                                    <div class="divTableCell">Vestibulum viverra</div>
+                                </div>
+                                <div class="divTableRow">
+                                    <div class="divTableCell">28 Nov 2016</div>
+                                    <div class="divTableCell">Vestibulum viverra</div>
+                                </div>
+                                <div class="divTableRow">
+                                    <div class="divTableCell">&nbsp;</div>
+                                    <div class="divTableCell">&nbsp;</div>
+                                </div>
+                                <div class="divTableRow">
+                                    <div class="divTableCell">18 Dec 2016</div>
+                                    <div class="divTableCell">Vestibulum viverra</div>
+                                </div>
+                                <div class="divTableRow">
+                                    <div class="divTableCell">&nbsp;</div>
+                                    <div class="divTableCell">&nbsp;</div>
+                                </div>
+                                <div class="divTableRow">
+                                    <div class="divTableCell"> 7 Jan 2017</div>
+                                    <div class="divTableCell"> Vestibulum viverra</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="mountain2" class="tabcontent">
+                <div id="mountain2bg"></div>
+            </div>
+
+
+
+        </div>
+
+
+        <div class="footer">
+            <span class="navlogo"><img src="images/footer-tint.png" class="footerimg"  >
+            <img src="images/footer-tint2.png" class="navpadded footerimg" >
+            </span>
+            <span class="footer-text">
+            COPYRIGHT 2016. ALL RIGHTS RESERVED.
+            </span>
+        </div>
+    </div>
+
+    <!-- JS Imports -->
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+        // Sticky header trigger function
+        window.onscroll = function() {
+            myFunction();
+        };
+
+        $(document).ready(function() {
+            $('.slide').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        });
+
+        // Switching Tabs
+        function openTab(evt, mountainName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(mountainName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Set default tab
+        document.getElementById("defaultOpen").click();
+
+    </script>
+</body>
